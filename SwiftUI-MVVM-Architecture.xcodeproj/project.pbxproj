@@ -94,6 +94,11 @@
 		933A01C92B28D5E400FE2C1D /* SwiftUI-MVVM-Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				933A01F42B28D73D00FE2C1D /* DI */,
+				933A01F62B28D75100FE2C1D /* Data */,
+				933A01F82B28D76400FE2C1D /* UI */,
+				933A01F92B28D77F00FE2C1D /* Extension */,
+				933A01FA2B28D78E00FE2C1D /* Common */,
 				933A01CA2B28D5E400FE2C1D /* SwiftUI_MVVM_ArchitectureApp.swift */,
 				933A01CC2B28D5E400FE2C1D /* ContentView.swift */,
 				933A01CE2B28D5E600FE2C1D /* Assets.xcassets */,
@@ -125,6 +130,57 @@
 				933A01E72B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-MVVM-ArchitectureUITests";
+			sourceTree = "<group>";
+		};
+		933A01F42B28D73D00FE2C1D /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				933A01F52B28D74400FE2C1D /* Container */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		933A01F52B28D74400FE2C1D /* Container */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		933A01F62B28D75100FE2C1D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				933A01F72B28D75800FE2C1D /* API */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		933A01F72B28D75800FE2C1D /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		933A01F82B28D76400FE2C1D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		933A01F92B28D77F00FE2C1D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		933A01FA2B28D78E00FE2C1D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
