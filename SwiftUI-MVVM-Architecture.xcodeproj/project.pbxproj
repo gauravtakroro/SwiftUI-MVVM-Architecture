@@ -15,6 +15,9 @@
 		933A01E62B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A01E52B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITests.swift */; };
 		933A01E82B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A01E72B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITestsLaunchTests.swift */; };
 		933A01FD2B28DA0400FE2C1D /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 933A01FC2B28DA0400FE2C1D /* Swinject */; };
+		933A01FF2B28DB3B00FE2C1D /* ApiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A01FE2B28DB3B00FE2C1D /* ApiContainer.swift */; };
+		933A02012B28DBB900FE2C1D /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A02002B28DBB900FE2C1D /* Resolver.swift */; };
+		933A02032B28DBDC00FE2C1D /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A02022B28DBDC00FE2C1D /* DependencyManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		933A01E12B28D5E600FE2C1D /* SwiftUI-MVVM-ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-MVVM-ArchitectureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		933A01E52B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVM_ArchitectureUITests.swift; sourceTree = "<group>"; };
 		933A01E72B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MVVM_ArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		933A01FE2B28DB3B00FE2C1D /* ApiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiContainer.swift; sourceTree = "<group>"; };
+		933A02002B28DBB900FE2C1D /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		933A02022B28DBDC00FE2C1D /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				933A01F52B28D74400FE2C1D /* Container */,
+				933A02002B28DBB900FE2C1D /* Resolver.swift */,
+				933A02022B28DBDC00FE2C1D /* DependencyManager.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -145,6 +153,7 @@
 		933A01F52B28D74400FE2C1D /* Container */ = {
 			isa = PBXGroup;
 			children = (
+				933A01FE2B28DB3B00FE2C1D /* ApiContainer.swift */,
 			);
 			path = Container;
 			sourceTree = "<group>";
@@ -321,8 +330,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933A01FF2B28DB3B00FE2C1D /* ApiContainer.swift in Sources */,
 				933A01CD2B28D5E400FE2C1D /* ContentView.swift in Sources */,
+				933A02032B28DBDC00FE2C1D /* DependencyManager.swift in Sources */,
 				933A01CB2B28D5E400FE2C1D /* SwiftUI_MVVM_ArchitectureApp.swift in Sources */,
+				933A02012B28DBB900FE2C1D /* Resolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
