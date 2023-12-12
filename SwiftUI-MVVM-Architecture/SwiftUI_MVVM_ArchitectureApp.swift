@@ -2,7 +2,7 @@
 //  SwiftUI_MVVM_ArchitectureApp.swift
 //  SwiftUI-MVVM-Architecture
 //
-//  Created by Roro Solutions LLP on 12/12/23.
+//  Created by Gaurav Tak on 12/12/23.
 //
 
 import SwiftUI
