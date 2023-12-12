@@ -14,6 +14,7 @@
 		933A01DC2B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A01DB2B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureTests.swift */; };
 		933A01E62B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A01E52B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITests.swift */; };
 		933A01E82B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933A01E72B28D5E600FE2C1D /* SwiftUI_MVVM_ArchitectureUITestsLaunchTests.swift */; };
+		933A01FD2B28DA0400FE2C1D /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 933A01FC2B28DA0400FE2C1D /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933A01FD2B28DA0400FE2C1D /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +201,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-MVVM-Architecture";
+			packageProductDependencies = (
+				933A01FC2B28DA0400FE2C1D /* Swinject */,
+			);
 			productName = "SwiftUI-MVVM-Architecture";
 			productReference = 933A01C72B28D5E400FE2C1D /* SwiftUI-MVVM-Architecture.app */;
 			productType = "com.apple.product-type.application";
@@ -271,6 +276,9 @@
 				Base,
 			);
 			mainGroup = 933A01BE2B28D5E400FE2C1D;
+			packageReferences = (
+				933A01FB2B28DA0400FE2C1D /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 933A01C82B28D5E400FE2C1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -639,6 +647,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		933A01FB2B28DA0400FE2C1D /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		933A01FC2B28DA0400FE2C1D /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 933A01FB2B28DA0400FE2C1D /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 933A01BF2B28D5E400FE2C1D /* Project object */;
 }
