@@ -15,6 +15,9 @@ class ApiContainer {
         
         let container = Container()
         
+        container.register(ProductsStoreService.self) { _  in
+            return ProductsStoreServiceImpl()
+        }
         return container
     }
     
