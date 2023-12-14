@@ -9,37 +9,24 @@ import SwiftUI
 
 struct SplashView: View {
     
-    @Environment(\.colorScheme) var colorScheme
-    
-    @State var isContent : Bool = false
+    @Binding var isShowSplash: Bool
     
     var body: some View {
-        if isContent {
-            ContentView()
-        }
-        else {
+        VStack {
             VStack {
-                VStack {
-                    Image("swiftui_icon1").resizable()
-                        .frame(width: 60, height: 60)
-                    Text("SwiftUI with MVVM Architecture")
-                }
-                .scaleEffect()
+                Image("swiftui_icon1").resizable()
+                    .frame(width: 60, height: 60)
+                Text("SwiftUI with MVVM Architecture")
             }
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                    withAnimation {
-                        self.isContent = true
-                    }
-                }
-            }
-            .frame(maxWidth:.infinity, maxHeight: .infinity)
+            .scaleEffect()
         }
-    }
-}
-
-struct SplashView_Previews: PreviewProvider {
-    static var previews: some View {
-        SplashView()
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                withAnimation {
+                    self.isShowSplash = false
+                }
+            }
+        }
+        .frame(maxWidth:.infinity, maxHeight: .infinity)
     }
 }

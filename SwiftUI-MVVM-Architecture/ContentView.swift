@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isShowSplash = true
     var body: some View {
-        VStack {
-            Image("swiftui_icon1").resizable()
-                .frame(width: 60, height: 60)
-            Text("SwiftUI with MVVM Architecture--Content")
+        ZStack {
+            if isShowSplash {
+                SplashView(isShowSplash: $isShowSplash)
+            } else {
+                Text("ContentView ProductListing Page")
+            }
         }
         .scaleEffect()
-
     }
 }
 
