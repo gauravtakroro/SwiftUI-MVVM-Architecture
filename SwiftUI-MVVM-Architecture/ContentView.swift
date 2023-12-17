@@ -15,6 +15,7 @@ struct ContentView: View {
                 SplashView(isShowSplash: $isShowSplash)
             } else {
                 Text("ContentView ProductListing Page")
+                ProductsListingView(productListingViewModel: ProductsListingViewModel())
             }
         }
         .scaleEffect()
