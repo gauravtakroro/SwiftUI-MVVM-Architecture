@@ -14,7 +14,6 @@ struct ContentView: View {
             if isShowSplash {
                 SplashView(isShowSplash: $isShowSplash)
             } else {
-                Text("ContentView ProductListing Page")
                 ProductsListingView(productListingViewModel: ProductsListingViewModel())
             }
         }
