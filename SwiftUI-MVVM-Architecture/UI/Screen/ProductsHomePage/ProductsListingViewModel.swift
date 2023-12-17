@@ -14,12 +14,16 @@ protocol ProductsListingViewModelProtocol: ObservableObject {
     var dependencies: ProductsListingInteractorDependenciesProtocol { get set }
     var products: Products? { get set }
     func loadProductsListing()
+    var isShowWebView: Bool { get set }
+    var productImageUrl: String? { get set }
 }
 
 class ProductsListingViewModel: ProductsListingViewModelProtocol {
     @Published var showNextUIOfNavigationFlow: Bool = false
     @Published var isLoading: Bool = false
     @Published var products: Products? = nil
+    @Published var isShowWebView: Bool = false
+    @Published var productImageUrl: String? = nil
   
     var dependencies: ProductsListingInteractorDependenciesProtocol
     
@@ -45,5 +49,9 @@ class ProductsListingViewModel: ProductsListingViewModelProtocol {
                 }
             }
         }
+    }
+    
+    func showWebBrowserView(url: String) -> WebBrowserView {
+        return WebBrowserView(url: URL(string: url)!)
     }
 }
